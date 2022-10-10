@@ -1,0 +1,25 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6343e893cff061dc4fee4f90
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "Tech with Peter"
+}
+
+###
+DELETE http://localhost:3000/subscribers/6343e18c31173c182274579a
+
+###
+PATCH http://localhost:3000/subscribers/6343ec772a78728b89969a21
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
